@@ -4,7 +4,7 @@ import { MessageCircle, Phone } from "lucide-react";
 import { Logo } from "@/components/shared/Logo";
 import { InstagramIcon } from "@/components/shared/icons";
 import { ArchDivider } from "@/components/shared/ArchDivider";
-import { NAV_LINKS, SITE, whatsappLink } from "@/data/site";
+import { DADOS_LEGAIS, NAV_LINKS, SITE, whatsappLink } from "@/data/site";
 
 export function Footer() {
   return (
@@ -92,9 +92,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center gap-2 border-t border-cream/10 pt-8 text-center">
-          <p className="font-sans text-xs text-cream/40">
-            © {new Date().getFullYear()} BnB Travel. Todos os direitos reservados.
+        <div className="mt-14 flex flex-col items-center gap-3 border-t border-cream/10 pt-8 text-center">
+          <p className="font-sans text-xs leading-relaxed text-cream/65">
+            BnB Travel — {DADOS_LEGAIS.razaoSocial} · CNPJ {DADOS_LEGAIS.cnpj} ·{" "}
+            {DADOS_LEGAIS.cidadeUf}
+            <br className="hidden sm:inline" /> Cadastur nº {DADOS_LEGAIS.cadastur} (Ministério
+            do Turismo)
+          </p>
+          <p className="font-sans text-xs text-cream/50">
+            © {new Date().getFullYear()} BnB Travel. Todos os direitos reservados. ·{" "}
+            <Link to="/privacidade" className="underline-offset-2 hover:underline">
+              Política de Privacidade
+            </Link>
           </p>
         </div>
       </div>

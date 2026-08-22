@@ -9,10 +9,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Link } from "react-router-dom";
+
 import { Reveal } from "@/components/shared/Reveal";
 import { InstagramIcon } from "@/components/shared/icons";
 import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { SITE, whatsappLink } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 const contatoSchema = z.object({
   nome: z.string().min(2, "Conte seu nome completo."),
@@ -24,6 +27,9 @@ const contatoSchema = z.object({
     .min(1, "Informe o número de viajantes.")
     .refine((v) => Number(v) > 0, "Informe um número válido de viajantes."),
   mensagem: z.string().min(10, "Conte um pouco mais sobre a sua viagem."),
+  consentimento: z
+    .boolean()
+    .refine((v) => v === true, "É preciso concordar com a Política de Privacidade para enviar."),
 });
 
 type ContatoFormValues = z.infer<typeof contatoSchema>;
@@ -44,6 +50,12 @@ const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${CONTATO_EMAIL}`;
 const FORMSUBMIT_CONFIGURADO = !CONTATO_EMAIL.includes("SEU_EMAIL_AQUI");
 
 export function Contato() {
+  useSeo({
+    title: "Contato",
+    description:
+      "Fale com a BnB Travel pelo formulário, WhatsApp ou Instagram, ou comece pelo formulário de Diagnóstico de Viagem.",
+  });
+
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const {
     register,
@@ -52,20 +64,28 @@ export function Contato() {
     formState: { errors, isSubmitting },
   } = useForm<ContatoFormValues>({
     resolver: zodResolver(contatoSchema),
+    defaultValues: { consentimento: false },
   });
 
   async function onSubmit(values: ContatoFormValues) {
     setStatus("idle");
     try {
+      const { consentimento: _consentimento, ...dadosParaEnvio } = values;
       if (FORMSUBMIT_CONFIGURADO) {
         const response = await fetch(FORMSUBMIT_ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
-            ...values,
+            ...dadosParaEnvio,
             _subject: `BnB Travel — novo contato de ${values.nome}`,
             _template: "table",
             _captcha: "false",
+            // Honeypot: campo que só um robô preencheria. O FormSubmit
+            // descarta silenciosamente qualquer envio que chegue com esse
+            // campo preenchido — a proteção contra spam recomendada para o
+            // endpoint de AJAX, já que o captcha visual do FormSubmit exige
+            // uma página própria, que não existe nesse fluxo.
+            _honey: "",
           }),
         });
         if (!response.ok) throw new Error("Falha no envio do formulário.");
@@ -166,6 +186,30 @@ export function Contato() {
                 />
                 {errors.mensagem && (
                   <p className="text-xs text-destructive">{errors.mensagem.message}</p>
+                )}
+              </div>
+
+              <div className="space-y-2">
+                <label className="flex items-start gap-3 text-sm text-navy/75">
+                  <input
+                    type="checkbox"
+                    className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-navy/30 text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                    {...register("consentimento")}
+                  />
+                  <span>
+                    Li e concordo com a{" "}
+                    <Link
+                      to="/privacidade"
+                      target="_blank"
+                      className="font-medium text-navy underline-offset-2 hover:underline"
+                    >
+                      Política de Privacidade
+                    </Link>
+                    , e autorizo o uso dos meus dados para este contato.
+                  </span>
+                </label>
+                {errors.consentimento && (
+                  <p className="text-xs text-destructive">{errors.consentimento.message}</p>
                 )}
               </div>
 

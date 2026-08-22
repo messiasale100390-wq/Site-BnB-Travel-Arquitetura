@@ -3,6 +3,7 @@ import { ArchDivider } from "@/components/shared/ArchDivider";
 import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { Button } from "@/components/ui/button";
 import { whatsappLink } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 const TEMAS = [
   {
@@ -35,6 +36,12 @@ const CUIDADOS = [
 ];
 
 export function Milhas() {
+  useSeo({
+    title: "Milhas",
+    description:
+      "Cartões, pontos, programas de fidelidade e salas VIP explicados em linguagem simples — milhas como caminho para a viagem, não como promessa de economia garantida.",
+  });
+
   return (
     <>
       <section className="relative flex h-[70vh] min-h-[420px] items-center overflow-hidden bg-navy-dark">

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: trocar pelo domínio real assim que a hospedagem for definida.
+Sitemap: https://www.bnbtravel.com.br/sitemap.xml

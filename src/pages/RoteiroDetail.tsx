@@ -6,16 +6,21 @@ import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { Button } from "@/components/ui/button";
 import { ROTEIROS } from "@/data/roteiros";
 import { whatsappLink } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 export function RoteiroDetail() {
   const { slug } = useParams<{ slug: string }>();
   const index = ROTEIROS.findIndex((r) => r.slug === slug);
+  const roteiro = index !== -1 ? ROTEIROS[index] : undefined;
 
-  if (index === -1) {
+  useSeo({
+    title: roteiro ? `${roteiro.nome} — ${roteiro.destino}` : "Roteiro",
+    description: roteiro?.resumo,
+  });
+
+  if (!roteiro) {
     return <Navigate to="/roteiros" replace />;
   }
-
-  const roteiro = ROTEIROS[index];
   const proximo = ROTEIROS[(index + 1) % ROTEIROS.length];
 
   return (

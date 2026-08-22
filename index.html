@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo/bnb-icone-arco.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2F3E46" />
     <meta
       name="description"
       content="BnB Travel — consultoria boutique de viagens com especialização em milhas. Basic, Not Basic Journeys."
     />
+
+    <!-- Google Fonts: preconnect antes do link de stylesheet evita a cadeia
+         serial de um @import dentro do CSS (que só começaria a baixar a
+         fonte depois do CSS inteiro já ter chegado). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>BnB Travel — Basic, Not Basic Journeys</title>
+
+    <!-- Open Graph / preview de link (WhatsApp, Instagram, redes sociais).
+         TODO: trocar "https://www.bnbtravel.com.br" pelo domínio real assim
+         que a hospedagem for definida — sem isso, os links de preview abaixo
+         não resolvem para o site publicado. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BnB Travel" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="BnB Travel — Basic, Not Basic Journeys" />
+    <meta
+      property="og:description"
+      content="Consultoria boutique de viagens com especialização em milhas. Curadoria, estratégia e cuidado, dos pontos acumulados à experiência vivida."
+    />
+    <meta property="og:url" content="https://www.bnbtravel.com.br" />
+    <meta property="og:image" content="https://www.bnbtravel.com.br/images/hero/hero-home.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BnB Travel — Basic, Not Basic Journeys" />
+    <meta
+      name="twitter:description"
+      content="Consultoria boutique de viagens com especialização em milhas. Basic, Not Basic Journeys."
+    />
+    <meta name="twitter:image" content="https://www.bnbtravel.com.br/images/hero/hero-home.jpg" />
   </head>
   <body>
     <div id="root"></div>

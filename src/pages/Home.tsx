@@ -12,8 +12,16 @@ import {
   PORTAS_DE_ENTRADA,
 } from "@/data/institucional";
 import { whatsappLink, whatsappLinkJornada, SITE } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 export function Home() {
+  useSeo({
+    title: "BnB Travel — Basic, Not Basic Journeys",
+    description:
+      "Consultoria boutique de viagens com especialização em milhas. Curadoria, estratégia e cuidado, dos pontos acumulados à experiência vivida.",
+    semSufixo: true,
+  });
+
   return (
     <>
       {/* Hero */}

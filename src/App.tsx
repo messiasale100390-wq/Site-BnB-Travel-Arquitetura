@@ -13,6 +13,7 @@ import { Blog } from "@/pages/Blog";
 import { BlogPost } from "@/pages/BlogPost";
 import { FaqPage } from "@/pages/Faq";
 import { Contato } from "@/pages/Contato";
+import { Privacidade } from "@/pages/Privacidade";
 import { NotFound } from "@/pages/NotFound";
 
 function ScrollToTop() {
@@ -49,6 +50,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/privacidade" element={<Privacidade />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

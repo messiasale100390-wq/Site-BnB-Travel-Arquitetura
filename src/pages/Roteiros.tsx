@@ -6,6 +6,7 @@ import { RoteiroCard } from "@/components/shared/RoteiroCard";
 import { ROTEIROS } from "@/data/roteiros";
 import type { CategoriaRoteiro } from "@/types";
 import { cn } from "@/lib/utils";
+import { useSeo } from "@/hooks/useSeo";
 
 const CATEGORIAS: (CategoriaRoteiro | "Todos")[] = [
   "Todos",
@@ -16,6 +17,12 @@ const CATEGORIAS: (CategoriaRoteiro | "Todos")[] = [
 ];
 
 export function Roteiros() {
+  useSeo({
+    title: "Roteiros",
+    description:
+      "Um portfólio de roteiros e curadorias que ilustram a forma como a BnB Travel pensa uma viagem — do ritmo ao roteiro, por destino e estilo.",
+  });
+
   const [filtro, setFiltro] = useState<(typeof CATEGORIAS)[number]>("Todos");
 
   const roteirosFiltrados = useMemo(() => {

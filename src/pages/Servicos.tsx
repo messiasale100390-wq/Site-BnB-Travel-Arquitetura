@@ -3,8 +3,15 @@ import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { Button } from "@/components/ui/button";
 import { SERVICOS } from "@/data/servicos";
 import { whatsappLink } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 export function Servicos() {
+  useSeo({
+    title: "Serviços",
+    description:
+      "Do roteiro personalizado à gestão contínua de milhas: conheça os serviços da BnB Travel, cada um pensado para um momento diferente da sua relação com viagens.",
+  });
+
   return (
     <>
       <section className="relative flex h-[60vh] min-h-[380px] items-end overflow-hidden bg-navy-dark">

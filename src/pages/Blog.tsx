@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Reveal } from "@/components/shared/Reveal";
 import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { POSTS } from "@/data/blog";
+import { useSeo } from "@/hooks/useSeo";
 
 function formatarData(iso: string) {
   return new Date(`${iso}T00:00:00`).toLocaleDateString("pt-BR", {
@@ -13,6 +14,12 @@ function formatarData(iso: string) {
 }
 
 export function Blog() {
+  useSeo({
+    title: "Blog",
+    description:
+      "Conteúdo educativo sobre milhas e cartões, e bastidores da fundadora da BnB Travel — leveza com propósito, aplicada à viagem e ao dia a dia.",
+  });
+
   return (
     <section className="pt-36 pb-24 sm:pt-44 sm:pb-32">
       <div className="container">

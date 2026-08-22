@@ -10,6 +10,18 @@ export const SITE = {
   diagnosticoUrl: "https://forms.cloud.microsoft/r/qrBWuB5nL9",
 };
 
+// Dados legais reais (Cadastro Nacional da Pessoa Jurídica e Cadastur —
+// Ministério do Turismo). Endereço comercial completo não é exibido
+// publicamente por se tratar do endereço residencial da fundadora (MEI
+// operado de casa) — só cidade/UF ficam visíveis, por prudência.
+export const DADOS_LEGAIS = {
+  razaoSocial: "Natassia Majuda Carvalho",
+  cnpj: "68.138.606/0001-21",
+  cidadeUf: "São José do Rio Preto/SP",
+  cadastur: "68.138.606/0001-21",
+  cadasturValidade: "22/07/2028",
+};
+
 /**
  * Monta um link de WhatsApp com mensagem pré-preenchida específica do contexto.
  * Cada CTA do site deve usar uma mensagem própria em vez de um texto genérico único.

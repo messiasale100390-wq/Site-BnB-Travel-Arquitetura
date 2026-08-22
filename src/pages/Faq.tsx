@@ -9,8 +9,15 @@ import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { Button } from "@/components/ui/button";
 import { FAQ } from "@/data/faq";
 import { whatsappLink } from "@/data/site";
+import { useSeo } from "@/hooks/useSeo";
 
 export function FaqPage() {
+  useSeo({
+    title: "Perguntas Frequentes",
+    description:
+      "Tire suas dúvidas sobre como funciona a BnB Travel: diagnóstico, serviços, preços de referência e uso estratégico de milhas.",
+  });
+
   return (
     <>
       <section className="pt-36 pb-16 text-center sm:pt-44 sm:pb-20">

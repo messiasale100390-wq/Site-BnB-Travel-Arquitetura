@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 
 import { ArchDivider } from "@/components/shared/ArchDivider";
 import { Button } from "@/components/ui/button";
+import { useSeo } from "@/hooks/useSeo";
 
 export function NotFound() {
+  useSeo({ title: "Página não encontrada" });
+
   return (
     <section className="flex min-h-[70vh] flex-col items-center justify-center px-6 text-center">
       <ArchDivider className="mb-8 text-gold" />

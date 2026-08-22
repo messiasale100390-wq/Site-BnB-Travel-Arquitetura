@@ -7,8 +7,15 @@ import {
   POSICIONAMENTO,
   VALORES,
 } from "@/data/institucional";
+import { useSeo } from "@/hooks/useSeo";
 
 export function Sobre() {
+  useSeo({
+    title: "Sobre",
+    description:
+      "A história por trás da BnB Travel: como a experiência da fundadora com viagens e milhas deu origem a uma consultoria boutique guiada por leveza com propósito.",
+  });
+
   return (
     <>
       <section className="relative flex h-[70vh] min-h-[420px] items-end overflow-hidden bg-navy-dark">

@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { Reveal } from "@/components/shared/Reveal";
 import { SectionEyebrow } from "@/components/shared/SectionEyebrow";
 import { POSTS } from "@/data/blog";
+import { useSeo } from "@/hooks/useSeo";
 
 function formatarData(iso: string) {
   return new Date(`${iso}T00:00:00`).toLocaleDateString("pt-BR", {
@@ -16,6 +17,11 @@ function formatarData(iso: string) {
 export function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = POSTS.find((p) => p.slug === slug);
+
+  useSeo({
+    title: post?.titulo ?? "Blog",
+    description: post?.resumo,
+  });
 
   if (!post) {
     return <Navigate to="/blog" replace />;
