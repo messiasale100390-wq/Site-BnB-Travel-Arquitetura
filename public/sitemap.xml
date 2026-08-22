@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: trocar "https://www.bnbtravel.com.br" pelo domínio real assim que
-     a hospedagem for definida. Ao adicionar/remover roteiros ou posts do
-     blog em src/data/, atualizar as URLs correspondentes aqui também. -->
+<!-- Ao adicionar/remover roteiros ou posts do blog em src/data/, atualizar
+     as URLs correspondentes aqui também. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bnbtravel.com.br/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/sobre</loc><priority>0.8</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/servicos</loc><priority>0.8</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/milhas</loc><priority>0.8</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros</loc><priority>0.7</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/buenos-aires-em-camadas</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/paris-essencial</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/uma-noite-em-verona</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/zermatt-e-o-matterhorn</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/lago-oeschinensee</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/trem-panoramico-suico</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/roteiros/vista-de-nova-york</loc><priority>0.5</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/blog</loc><priority>0.6</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/blog/milhas-nao-sao-sobre-acumular</loc><priority>0.4</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/blog/uma-boa-viagem-comeca-antes-do-embarque</loc><priority>0.4</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/blog/salas-vip-o-que-vale-a-pena-saber</loc><priority>0.4</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/faq</loc><priority>0.6</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/contato</loc><priority>0.7</priority></url>
-  <url><loc>https://www.bnbtravel.com.br/privacidade</loc><priority>0.2</priority></url>
+  <url><loc>https://www.bnbasic.com.br/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.bnbasic.com.br/sobre</loc><priority>0.8</priority></url>
+  <url><loc>https://www.bnbasic.com.br/servicos</loc><priority>0.8</priority></url>
+  <url><loc>https://www.bnbasic.com.br/milhas</loc><priority>0.8</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros</loc><priority>0.7</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/buenos-aires-em-camadas</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/paris-essencial</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/uma-noite-em-verona</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/zermatt-e-o-matterhorn</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/lago-oeschinensee</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/trem-panoramico-suico</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/roteiros/vista-de-nova-york</loc><priority>0.5</priority></url>
+  <url><loc>https://www.bnbasic.com.br/blog</loc><priority>0.6</priority></url>
+  <url><loc>https://www.bnbasic.com.br/blog/milhas-nao-sao-sobre-acumular</loc><priority>0.4</priority></url>
+  <url><loc>https://www.bnbasic.com.br/blog/uma-boa-viagem-comeca-antes-do-embarque</loc><priority>0.4</priority></url>
+  <url><loc>https://www.bnbasic.com.br/blog/salas-vip-o-que-vale-a-pena-saber</loc><priority>0.4</priority></url>
+  <url><loc>https://www.bnbasic.com.br/faq</loc><priority>0.6</priority></url>
+  <url><loc>https://www.bnbasic.com.br/contato</loc><priority>0.7</priority></url>
+  <url><loc>https://www.bnbasic.com.br/privacidade</loc><priority>0.2</priority></url>
 </urlset>
