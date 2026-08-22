@@ -120,4 +120,21 @@ export const ROTEIROS: Roteiro[] = [
     imagemCapa: "/images/roteiros/trem-1.jpg",
     galeria: ["/images/roteiros/trem-1.jpg"],
   },
+  {
+    slug: "vista-de-nova-york",
+    nome: "Vista de Nova York",
+    destino: "Nova York",
+    pais: "Estados Unidos",
+    duracao: "5 dias",
+    estilo: "Urbano · Mirante",
+    categorias: ["Internacional", "Cidades"],
+    resumo:
+      "Manhattan vista de cima, do alto de um mirante de vidro — o tipo de momento que vale a pena reservar com antecedência.",
+    descricao: [
+      "Nova York recompensa quem organiza a viagem com intenção. Este roteiro reserva um fim de tarde para um dos mirantes mais altos da cidade, com vista aberta para os arranha-céus de Manhattan, e distribui o restante dos dias entre bairros, museus e a caminhada inevitável pelas grandes avenidas.",
+      "A curadoria prioriza ingressos e horários reservados com antecedência — mirantes e atrações mais concorridas de Nova York esgotam rápido, especialmente em alta temporada.",
+    ],
+    imagemCapa: "/images/roteiros/nova-york-1.jpg",
+    galeria: ["/images/roteiros/nova-york-1.jpg"],
+  },
 ];

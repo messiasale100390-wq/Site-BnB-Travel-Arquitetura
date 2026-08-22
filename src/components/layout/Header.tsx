@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 // Nas demais páginas (sem hero de fundo escuro) o header é sempre sólido,
 // para manter contraste sobre o fundo cream.
 function paginaTemHeroEscuro(pathname: string) {
-  if (["/", "/sobre", "/servicos", "/milhas"].includes(pathname)) return true;
+  if (["/", "/servicos", "/milhas"].includes(pathname)) return true;
   if (/^\/roteiros\/[^/]+$/.test(pathname)) return true;
   return false;
 }
@@ -56,9 +56,9 @@ export function Header() {
               key={link.href}
               to={link.href}
               className={cn(
-                "font-sans text-xs font-medium uppercase tracking-widest transition-colors hover:text-gold-dark",
+                "font-sans text-xs font-medium uppercase tracking-widest transition-colors hover:text-gold-deep",
                 light ? "text-cream/90" : "text-navy/80",
-                location.pathname === link.href && "text-gold-dark",
+                location.pathname === link.href && "text-gold-deep",
               )}
             >
               {link.label}
@@ -85,8 +85,8 @@ export function Header() {
                 key={link.href}
                 to={link.href}
                 className={cn(
-                  "py-3 font-sans text-sm font-medium uppercase tracking-widest text-navy/80 transition-colors hover:text-gold-dark",
-                  location.pathname === link.href && "text-gold-dark",
+                  "py-3 font-sans text-sm font-medium uppercase tracking-widest text-navy/80 transition-colors hover:text-gold-deep",
+                  location.pathname === link.href && "text-gold-deep",
                 )}
               >
                 {link.label}

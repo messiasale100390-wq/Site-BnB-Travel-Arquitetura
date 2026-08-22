@@ -76,7 +76,7 @@ export function Milhas() {
             {TEMAS.map((tema, i) => (
               <Reveal key={tema.titulo} delay={i * 80}>
                 <h3 className="font-display text-xl text-navy">{tema.titulo}</h3>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/70">
+                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/80">
                   {tema.descricao}
                 </p>
               </Reveal>
@@ -113,7 +113,7 @@ export function Milhas() {
             <h2 className="font-display text-3xl sm:text-4xl">
               Quer entender qual estratégia faz sentido pra você?
             </h2>
-            <p className="mt-4 font-sans text-sm leading-relaxed text-navy/70">
+            <p className="mt-4 font-sans text-sm leading-relaxed text-navy/80">
               A consultoria de milhas começa com um diagnóstico do seu perfil de gastos,
               cartões e objetivos de viagem.
             </p>

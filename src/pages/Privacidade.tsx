@@ -101,7 +101,7 @@ export function Privacidade() {
           <h1 className="mt-4 font-display text-3xl leading-tight sm:text-4xl">
             Política de Privacidade
           </h1>
-          <p className="mt-3 font-sans text-xs uppercase tracking-wide text-navy/45">
+          <p className="mt-3 font-sans text-xs uppercase tracking-wide text-navy/80">
             Última atualização: agosto de 2026
           </p>
           <p className="mt-6 font-sans text-base leading-relaxed text-navy/80">
@@ -115,7 +115,7 @@ export function Privacidade() {
             <Reveal key={secao.titulo} delay={Math.min(i * 30, 200)}>
               <h2 className="font-display text-xl text-navy">{secao.titulo}</h2>
               {secao.corpo.map((paragrafo, j) => (
-                <p key={j} className="mt-3 font-sans text-sm leading-relaxed text-navy/75">
+                <p key={j} className="mt-3 font-sans text-sm leading-relaxed text-navy/80">
                   {paragrafo}
                 </p>
               ))}
@@ -124,7 +124,7 @@ export function Privacidade() {
                   {secao.lista.map((item) => (
                     <li
                       key={item}
-                      className="font-sans text-sm leading-relaxed text-navy/75 pl-4 relative before:absolute before:left-0 before:content-['—']"
+                      className="font-sans text-sm leading-relaxed text-navy/80 pl-4 relative before:absolute before:left-0 before:content-['—']"
                     >
                       {item}
                     </li>
@@ -136,14 +136,14 @@ export function Privacidade() {
         </div>
 
         <Reveal delay={200} className="mt-14 border-t border-sand pt-8">
-          <p className="font-sans text-sm leading-relaxed text-navy/70">
+          <p className="font-sans text-sm leading-relaxed text-navy/80">
             Dúvidas sobre esta política? Fale com a gente.
           </p>
           <a
             href={whatsappLink("Olá! Tenho uma dúvida sobre a política de privacidade do site.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 inline-block font-sans text-sm font-medium text-gold-dark underline-offset-4 hover:underline"
+            className="mt-2 inline-block font-sans text-sm font-medium text-gold-deep underline-offset-4 hover:underline"
           >
             Falar no WhatsApp →
           </a>

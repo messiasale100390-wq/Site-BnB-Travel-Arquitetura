@@ -33,7 +33,7 @@ export function BlogPost() {
         <Reveal>
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 font-sans text-xs font-medium uppercase tracking-wide text-navy/50 hover:text-gold-dark"
+            className="inline-flex items-center gap-2 font-sans text-xs font-medium uppercase tracking-wide text-navy/80 hover:text-gold-deep"
           >
             <ArrowLeft className="h-3.5 w-3.5" /> Voltar ao blog
           </Link>

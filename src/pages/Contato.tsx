@@ -124,7 +124,7 @@ export function Contato() {
         <div className="container">
           <SectionEyebrow>Vamos conversar</SectionEyebrow>
           <h1 className="mx-auto mt-4 max-w-xl font-display text-4xl sm:text-5xl">Contato</h1>
-          <p className="mx-auto mt-5 max-w-lg font-sans text-sm leading-relaxed text-navy/70">
+          <p className="mx-auto mt-5 max-w-lg font-sans text-sm leading-relaxed text-navy/80">
             Preencha o formulário com os detalhes da sua próxima viagem, ou fale diretamente
             com a gente pelo WhatsApp.
           </p>
@@ -190,7 +190,7 @@ export function Contato() {
               </div>
 
               <div className="space-y-2">
-                <label className="flex items-start gap-3 text-sm text-navy/75">
+                <label className="flex items-start gap-3 text-sm text-navy/80">
                   <input
                     type="checkbox"
                     className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-navy/30 text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
@@ -220,7 +220,7 @@ export function Contato() {
 
                 {status === "success" && (
                   <p className="flex items-center gap-2 font-sans text-sm text-navy">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-gold-dark" />
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-gold-deep" />
                     Mensagem enviada — obrigada pelo contato!
                   </p>
                 )}
@@ -237,7 +237,7 @@ export function Contato() {
           <Reveal delay={100} className="lg:col-span-4 lg:col-start-9">
             <div className="bg-cream-soft p-8">
               <SectionEyebrow>Fale com a gente</SectionEyebrow>
-              <p className="mt-4 font-sans text-sm leading-relaxed text-navy/70">
+              <p className="mt-4 font-sans text-sm leading-relaxed text-navy/80">
                 Prefere pular o formulário? Esses são os nossos canais diretos.
               </p>
 
@@ -247,18 +247,18 @@ export function Contato() {
                     href={whatsappLink("Olá! Vim do site da BnB Travel e quero conversar.")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-dark"
+                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-deep"
                   >
-                    <MessageCircle className="h-4 w-4 shrink-0 text-gold-dark" />
+                    <MessageCircle className="h-4 w-4 shrink-0 text-gold-deep" />
                     WhatsApp
                   </a>
                 </li>
                 <li>
                   <a
                     href={`tel:${SITE.telefone.replace(/\s/g, "")}`}
-                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-dark"
+                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-deep"
                   >
-                    <Phone className="h-4 w-4 shrink-0 text-gold-dark" />
+                    <Phone className="h-4 w-4 shrink-0 text-gold-deep" />
                     {SITE.telefoneExibicao}
                   </a>
                 </li>
@@ -267,16 +267,16 @@ export function Contato() {
                     href={SITE.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-dark"
+                    className="flex items-center gap-3 font-sans text-sm text-navy transition-colors hover:text-gold-deep"
                   >
-                    <InstagramIcon className="h-4 w-4 shrink-0 text-gold-dark" />
+                    <InstagramIcon className="h-4 w-4 shrink-0 text-gold-deep" />
                     {SITE.instagramHandle}
                   </a>
                 </li>
               </ul>
 
               <div className="mt-8 border-t border-sand pt-6">
-                <p className="font-sans text-xs leading-relaxed text-navy/60">
+                <p className="font-sans text-xs leading-relaxed text-navy/80">
                   Prefere começar por um diagnóstico estruturado?
                 </p>
                 <Button asChild variant="outline" className="mt-4 w-full">

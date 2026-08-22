@@ -36,7 +36,7 @@ export function Roteiros() {
         <div className="container text-center">
           <SectionEyebrow>Portfólio</SectionEyebrow>
           <h1 className="mx-auto mt-4 max-w-xl font-display text-4xl sm:text-5xl">Roteiros</h1>
-          <p className="mx-auto mt-5 max-w-lg font-sans text-sm leading-relaxed text-navy/70">
+          <p className="mx-auto mt-5 max-w-lg font-sans text-sm leading-relaxed text-navy/80">
             Uma seleção de curadorias e destinos que ilustram a forma como a BnB Travel pensa
             uma viagem — do ritmo ao roteiro.
           </p>
@@ -49,7 +49,7 @@ export function Roteiros() {
                 onClick={() => setFiltro(cat)}
                 className={cn(
                   "font-sans text-xs font-medium uppercase tracking-widest transition-colors",
-                  filtro === cat ? "text-gold-dark" : "text-navy/45 hover:text-navy/80",
+                  filtro === cat ? "text-gold-deep" : "text-navy/80 hover:text-navy/80",
                 )}
               >
                 {cat}

@@ -28,6 +28,11 @@ export default {
         gold: {
           DEFAULT: "#C6A77D",
           dark: "#B1936A",
+          // Tom mais escuro, reservado para TEXTO dourado sobre fundo claro
+          // (rótulos, links) — "gold-dark" sozinho mede ~2.5:1 de contraste
+          // sobre o cream, abaixo do mínimo de acessibilidade (4.5:1); este
+          // tom mede ~5.3:1, mantendo a família de cor da marca.
+          deep: "#7A5C3A",
         },
         cream: {
           DEFAULT: "#F5EDE6",

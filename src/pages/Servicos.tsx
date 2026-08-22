@@ -32,7 +32,7 @@ export function Servicos() {
       <section className="py-20 sm:py-28">
         <div className="container">
           <Reveal className="mx-auto max-w-2xl text-center">
-            <p className="font-sans text-sm leading-relaxed text-navy/70">
+            <p className="font-sans text-sm leading-relaxed text-navy/80">
               Cada serviço é pensado para um momento diferente da sua relação com viagens e
               milhas. Escopo, prazos e investimento são sempre conversados com calma — pelo
               WhatsApp ou no diagnóstico — antes de qualquer contratação.
@@ -48,10 +48,10 @@ export function Servicos() {
                   </div>
                   <div className="sm:col-span-11">
                     <h2 className="font-display text-2xl text-navy">{servico.nome}</h2>
-                    <p className="mt-2 font-sans text-sm leading-relaxed text-navy/70">
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-navy/80">
                       {servico.inclui}
                     </p>
-                    <p className="mt-3 font-sans text-xs uppercase tracking-wide text-navy/45">
+                    <p className="mt-3 font-sans text-xs uppercase tracking-wide text-navy/80">
                       {servico.perfilIndicado}
                     </p>
                   </div>

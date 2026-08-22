@@ -62,7 +62,7 @@ export function RoteiroDetail() {
               </div>
               <div>
                 <p className="label-eyebrow">Categorias</p>
-                <p className="mt-1 font-sans text-sm text-navy/70">
+                <p className="mt-1 font-sans text-sm text-navy/80">
                   {roteiro.categorias.join(" · ")}
                 </p>
               </div>
@@ -72,7 +72,7 @@ export function RoteiroDetail() {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block pt-2 font-sans text-sm font-medium text-gold-dark underline-offset-4 hover:underline"
+                className="inline-block pt-2 font-sans text-sm font-medium text-gold-deep underline-offset-4 hover:underline"
               >
                 Perguntar sobre este roteiro →
               </a>
@@ -89,7 +89,7 @@ export function RoteiroDetail() {
             <div className="mt-10 space-y-6">
               {roteiro.descricao.map((paragrafo, i) => (
                 <Reveal key={i} delay={i * 60}>
-                  <p className="font-sans text-base leading-relaxed text-navy/75">
+                  <p className="font-sans text-base leading-relaxed text-navy/80">
                     {paragrafo}
                   </p>
                 </Reveal>

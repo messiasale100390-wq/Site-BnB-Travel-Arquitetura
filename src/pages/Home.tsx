@@ -82,7 +82,7 @@ export function Home() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-3 font-display text-xl text-navy">{item.titulo}</h3>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/70">
+                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/80">
                   {item.descricao}
                 </p>
               </Reveal>
@@ -104,12 +104,12 @@ export function Home() {
               <Reveal key={porta.titulo} delay={i * 100} className="flex flex-col bg-cream-soft p-8 sm:p-10">
                 <span className="label-eyebrow">{String(i + 1).padStart(2, "0")} —</span>
                 <h3 className="mt-3 font-display text-2xl text-navy">{porta.titulo}</h3>
-                <p className="mt-3 flex-1 font-sans text-sm leading-relaxed text-navy/70">
+                <p className="mt-3 flex-1 font-sans text-sm leading-relaxed text-navy/80">
                   {porta.descricao}
                 </p>
                 <ul className="mt-5 space-y-1 pb-1">
                   {porta.servicos.map((s) => (
-                    <li key={s} className="font-sans text-xs uppercase tracking-wide text-gold-dark">
+                    <li key={s} className="font-sans text-xs uppercase tracking-wide text-gold-deep">
                       {s}
                     </li>
                   ))}
@@ -133,7 +133,7 @@ export function Home() {
               <Reveal key={passo.numero} delay={i * 80} className="text-center">
                 <span className="font-display text-4xl text-gold">{passo.numero}</span>
                 <h3 className="mt-3 font-display text-lg text-navy">{passo.titulo}</h3>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/70">
+                <p className="mt-2 font-sans text-sm leading-relaxed text-navy/80">
                   {passo.descricao}
                 </p>
               </Reveal>
@@ -181,10 +181,10 @@ export function Home() {
           <Reveal delay={120}>
             <SectionEyebrow>A pessoa por trás da BnB</SectionEyebrow>
             <h2 className="mt-4 font-display text-3xl sm:text-4xl">Sobre a fundadora</h2>
-            <p className="mt-6 font-sans text-sm leading-relaxed text-navy/75 sm:text-base">
+            <p className="mt-6 font-sans text-sm leading-relaxed text-navy/80 sm:text-base">
               {HISTORIA_FUNDADORA.paragrafos[0]}
             </p>
-            <Button asChild variant="link" className="mt-6 text-navy hover:text-gold-dark">
+            <Button asChild variant="link" className="mt-6 text-navy hover:text-gold-deep">
               <Link to="/sobre">Conhecer a história completa →</Link>
             </Button>
           </Reveal>

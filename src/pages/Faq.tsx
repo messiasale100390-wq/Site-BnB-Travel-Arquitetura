@@ -41,7 +41,7 @@ export function FaqPage() {
           </Reveal>
 
           <Reveal delay={100} className="mt-16 text-center">
-            <p className="font-sans text-sm text-navy/70">Ainda com dúvidas?</p>
+            <p className="font-sans text-sm text-navy/80">Ainda com dúvidas?</p>
             <Button asChild className="mt-5">
               <a
                 href={whatsappLink("Olá! Tenho uma dúvida que não encontrei no FAQ do site.")}

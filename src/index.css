@@ -68,7 +68,7 @@
 
 @layer utilities {
   .label-eyebrow {
-    @apply font-sans text-xs font-medium uppercase tracking-widest2 text-gold-dark;
+    @apply font-sans text-xs font-semibold uppercase tracking-widest2 text-gold-deep;
   }
 
   .container-narrow {

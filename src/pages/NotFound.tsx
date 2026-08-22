@@ -12,7 +12,7 @@ export function NotFound() {
       <ArchDivider className="mb-8 text-gold" />
       <p className="label-eyebrow">Erro 404</p>
       <h1 className="mt-4 font-display text-3xl sm:text-4xl">Essa página saiu de rota.</h1>
-      <p className="mt-4 max-w-sm font-sans text-sm text-navy/70">
+      <p className="mt-4 max-w-sm font-sans text-sm text-navy/80">
         A página que você procura não existe ou foi movida.
       </p>
       <Button asChild className="mt-8">

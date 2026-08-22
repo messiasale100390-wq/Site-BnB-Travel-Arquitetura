@@ -18,7 +18,7 @@ export function RoteiroCard({ roteiro }: { roteiro: Roteiro }) {
           {roteiro.destino} · {roteiro.pais}
         </p>
         <h3 className="mt-1 font-display text-xl text-navy">{roteiro.nome}</h3>
-        <p className="mt-1 font-sans text-xs text-navy/60">
+        <p className="mt-1 font-sans text-xs text-navy/80">
           {roteiro.duracao} · {roteiro.estilo}
         </p>
       </div>

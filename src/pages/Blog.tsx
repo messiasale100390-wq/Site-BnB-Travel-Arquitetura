@@ -35,10 +35,10 @@ export function Blog() {
                 <p className="label-eyebrow">
                   {formatarData(post.data)} · {post.categoria}
                 </p>
-                <h2 className="mt-3 font-display text-2xl text-navy transition-colors group-hover:text-gold-dark sm:text-3xl">
+                <h2 className="mt-3 font-display text-2xl text-navy transition-colors group-hover:text-gold-deep sm:text-3xl">
                   {post.titulo}
                 </h2>
-                <p className="mt-3 font-sans text-sm leading-relaxed text-navy/70">
+                <p className="mt-3 font-sans text-sm leading-relaxed text-navy/80">
                   {post.resumo}
                 </p>
               </Link>

@@ -18,18 +18,34 @@ export function Sobre() {
 
   return (
     <>
-      <section className="relative flex h-[70vh] min-h-[420px] items-end overflow-hidden bg-navy-dark">
-        <img
-          src="/images/sobre/buenos-aires-arco.jpg"
-          alt="Passagem arqueada em Buenos Aires — a fundadora da BnB Travel em uma de suas viagens"
-          className="absolute inset-0 h-full w-full object-cover object-[50%_20%]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/85 via-navy-dark/25 to-navy-dark/10" />
-        <div className="container relative z-10 pb-16 text-cream">
-          <SectionEyebrow className="text-cream/80">Sobre a BnB Travel</SectionEyebrow>
-          <h1 className="mt-4 max-w-2xl font-display text-4xl leading-tight sm:text-5xl">
-            Leveza com propósito
-          </h1>
+      {/*
+        Hero em duas colunas, não em foto full-bleed: as fotos reais da BnB
+        Travel usadas no site são todas em retrato (fotos de celular). Numa
+        faixa larga e baixa (o padrão de hero das outras páginas), uma foto
+        de retrato precisa ser cortada em ~70% da altura para cobrir a
+        largura toda — corta justamente a parte de cima/baixo da composição.
+        Aqui a foto é mostrada quase inteira, num recorte bem mais próximo
+        do original, com o topo arredondado ecoando o arco do logotipo.
+      */}
+      <section className="overflow-hidden pt-32 pb-16 sm:pt-40 sm:pb-24">
+        <div className="container grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
+          <Reveal className="lg:col-span-5">
+            <SectionEyebrow>Sobre a BnB Travel</SectionEyebrow>
+            <h1 className="mt-4 font-display text-4xl leading-tight text-navy sm:text-5xl">
+              Leveza com propósito
+            </h1>
+            <p className="mt-5 max-w-sm font-sans text-sm leading-relaxed text-navy/80">
+              {HISTORIA_FUNDADORA.paragrafos[0]}
+            </p>
+          </Reveal>
+
+          <Reveal delay={120} className="lg:col-span-6 lg:col-start-7">
+            <img
+              src="/images/sobre/buenos-aires-arco.jpg"
+              alt="A fundadora da BnB Travel sob um arco iluminado, em uma passagem histórica de Buenos Aires"
+              className="mx-auto aspect-[3/4] w-full max-w-sm rounded-t-[7rem] object-cover shadow-xl sm:max-w-md lg:ml-auto lg:mr-0"
+            />
+          </Reveal>
         </div>
       </section>
 
@@ -44,7 +60,8 @@ export function Sobre() {
           </Reveal>
 
           <div className="lg:col-span-7 lg:col-start-6">
-            {HISTORIA_FUNDADORA.paragrafos.map((paragrafo, i) => (
+            {/* O primeiro parágrafo já aparece como teaser no hero acima. */}
+            {HISTORIA_FUNDADORA.paragrafos.slice(1).map((paragrafo, i) => (
               <Reveal key={i} delay={i * 80}>
                 <p className="mb-6 font-sans text-base leading-relaxed text-navy/80 last:mb-0">
                   {paragrafo}
@@ -84,7 +101,7 @@ export function Sobre() {
           </Reveal>
           <Reveal delay={100}>
             <SectionEyebrow>Essência</SectionEyebrow>
-            <p className="mt-4 font-display text-2xl italic leading-snug text-gold-dark sm:text-3xl">
+            <p className="mt-4 font-display text-2xl italic leading-snug text-gold-deep sm:text-3xl">
               {POSICIONAMENTO.essencia}
             </p>
           </Reveal>
