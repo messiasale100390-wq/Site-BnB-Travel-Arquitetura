@@ -20,7 +20,7 @@ export function Roteiros() {
   useSeo({
     title: "Roteiros",
     description:
-      "Um portfólio de roteiros e curadorias que ilustram a forma como a BnB Travel pensa uma viagem — do ritmo ao roteiro, por destino e estilo.",
+      "Um portfólio de roteiros e curadorias que ilustram a forma como a BnB Travel pensa uma viagem, por destino e estilo.",
   });
 
   const [filtro, setFiltro] = useState<(typeof CATEGORIAS)[number]>("Todos");
@@ -38,7 +38,7 @@ export function Roteiros() {
           <h1 className="mx-auto mt-4 max-w-xl font-display text-4xl sm:text-5xl">Roteiros</h1>
           <p className="mx-auto mt-5 max-w-lg font-sans text-sm leading-relaxed text-navy/80">
             Uma seleção de curadorias e destinos que ilustram a forma como a BnB Travel pensa
-            uma viagem — do ritmo ao roteiro.
+            uma viagem.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">

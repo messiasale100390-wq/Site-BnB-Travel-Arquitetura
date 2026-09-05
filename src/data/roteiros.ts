@@ -19,11 +19,13 @@ export const ROTEIROS: Roteiro[] = [
       "Buenos Aires se revela devagar — em avenidas largas, esquinas com história e um outono que pinta a cidade de dourado. Este roteiro foi pensado para quem quer caminhar mais e correr menos, equilibrando os pontos icônicos com tempo livre para simplesmente observar a cidade.",
       "A curadoria prioriza deslocamentos a pé e de curta distância, hospedagem em bairros centrais e uma dose generosa de gastronomia local — sempre respeitando o ritmo e o orçamento definidos no diagnóstico inicial.",
     ],
-    imagemCapa: "/images/roteiros/buenos-aires-1.jpg",
+    imagemCapa: "/images/roteiros/buenos-aires-capa.jpg",
     galeria: [
       "/images/roteiros/buenos-aires-1.jpg",
       "/images/roteiros/buenos-aires-2.jpg",
       "/images/roteiros/buenos-aires-3.jpg",
+      "/images/roteiros/buenos-aires-4.jpg",
+      "/images/roteiros/buenos-aires-5.jpg",
     ],
   },
   {
@@ -40,7 +42,7 @@ export const ROTEIROS: Roteiro[] = [
       "Paris pede tempo. Este roteiro combina os pontos que não podem ficar de fora — o Arco do Triunfo, o Louvre, as pontes do Sena — com pausas propositalmente vazias na agenda, para que a viagem não vire uma lista de tarefas.",
       "Pensado especialmente para casais, o roteiro reserva um fim de tarde para um piquenique com vista para a Torre Eiffel — um dos momentos mais lembrados por quem já viveu essa experiência.",
     ],
-    imagemCapa: "/images/roteiros/paris-1.jpg",
+    imagemCapa: "/images/roteiros/paris-capa.jpg",
     galeria: [
       "/images/roteiros/paris-1.jpg",
       "/images/roteiros/paris-2.jpg",
@@ -63,8 +65,13 @@ export const ROTEIROS: Roteiro[] = [
       "Verona é dessas cidades que pedem pouco tempo e entregam muito. Este roteiro foi desenhado como uma parada de três dias — ideal para somar a um itinerário maior pelo norte da Itália — com foco nas praças históricas, na gastronomia local e em passeios noturnos pelo centro.",
       "A recomendação é reservar hospedagem dentro do centro histórico, para aproveitar a cidade a pé, inclusive à noite, quando as praças ganham outra atmosfera.",
     ],
-    imagemCapa: "/images/roteiros/verona-1.jpg",
-    galeria: ["/images/roteiros/verona-1.jpg"],
+    imagemCapa: "/images/roteiros/verona-capa.jpg",
+    galeria: [
+      "/images/roteiros/verona-1.jpg",
+      "/images/roteiros/verona-2.jpg",
+      "/images/roteiros/verona-3.jpg",
+      "/images/roteiros/verona-4.jpg",
+    ],
   },
   {
     slug: "zermatt-e-o-matterhorn",
@@ -80,8 +87,11 @@ export const ROTEIROS: Roteiro[] = [
       "Zermatt é um respiro. A vila, livre de carros a combustão, vive na base de um dos cumes mais fotografados dos Alpes. O roteiro prioriza trilhas de dificuldade leve a moderada, mirantes acessíveis de trem cremalheira e tempo de sobra para simplesmente admirar a paisagem.",
       "Recomendado para quem busca desacelerar em meio à natureza, sem abrir mão de conforto e boa infraestrutura.",
     ],
-    imagemCapa: "/images/roteiros/zermatt-1.jpg",
-    galeria: ["/images/roteiros/zermatt-1.jpg"],
+    imagemCapa: "/images/roteiros/zermatt-capa.jpg",
+    galeria: [
+      "/images/roteiros/zermatt-1.jpg",
+      "/images/roteiros/zermatt-2.jpg",
+    ],
   },
   {
     slug: "lago-oeschinensee",
@@ -92,15 +102,17 @@ export const ROTEIROS: Roteiro[] = [
     estilo: "Natureza · Trilha",
     categorias: ["Internacional", "Natureza"],
     resumo:
-      "Um lago de águas turquesa cercado por paredões rochosos, acessível por teleférico e trilha leve.",
+      "Um lago de água turquesa cercado por paredões rochosos, acessível por teleférico e trilha leve.",
     descricao: [
       "Poucos lugares nos Alpes suíços entregam uma paisagem tão imediata quanto o Oeschinensee. A subida é feita por teleférico, seguida de uma caminhada curta até a margem do lago — um roteiro perfeito para somar a uma passagem mais longa pela região de Berna.",
       "Ideal como parada de um ou dois dias dentro de um itinerário maior pela Suíça, combinando bem com o roteiro de Zermatt.",
     ],
-    imagemCapa: "/images/roteiros/oeschinensee-1.jpg",
+    imagemCapa: "/images/roteiros/oeschinensee-capa.jpg",
     galeria: [
       "/images/roteiros/oeschinensee-1.jpg",
       "/images/roteiros/oeschinensee-2.jpg",
+      "/images/roteiros/oeschinensee-3.jpg",
+      "/images/roteiros/oeschinensee-4.jpg",
     ],
   },
   {
@@ -117,8 +129,13 @@ export const ROTEIROS: Roteiro[] = [
       "Atravessar os Alpes suíços de trem panorâmico é uma daquelas experiências que ficam marcadas — e que, com o uso estratégico de pontos e milhas, podem caber em orçamentos que pareciam distantes.",
       "Este roteiro ilustra bem a filosofia da BnB Travel: milhas como meio, não como fim. A curadoria conecta o trecho ferroviário a hospedagens e conexões que fazem sentido para o restante da viagem pela Suíça.",
     ],
-    imagemCapa: "/images/roteiros/trem-1.jpg",
-    galeria: ["/images/roteiros/trem-1.jpg"],
+    imagemCapa: "/images/roteiros/trem-capa.jpg",
+    galeria: [
+      "/images/roteiros/trem-1.jpg",
+      "/images/roteiros/trem-2.jpg",
+      "/images/roteiros/trem-3.jpg",
+      "/images/roteiros/trem-4.jpg",
+    ],
   },
   {
     slug: "vista-de-nova-york",
@@ -134,7 +151,12 @@ export const ROTEIROS: Roteiro[] = [
       "Nova York recompensa quem organiza a viagem com intenção. Este roteiro reserva um fim de tarde para um dos mirantes mais altos da cidade, com vista aberta para os arranha-céus de Manhattan, e distribui o restante dos dias entre bairros, museus e a caminhada inevitável pelas grandes avenidas.",
       "A curadoria prioriza ingressos e horários reservados com antecedência — mirantes e atrações mais concorridas de Nova York esgotam rápido, especialmente em alta temporada.",
     ],
-    imagemCapa: "/images/roteiros/nova-york-1.jpg",
-    galeria: ["/images/roteiros/nova-york-1.jpg"],
+    imagemCapa: "/images/roteiros/nova-york-capa.jpg",
+    galeria: [
+      "/images/roteiros/nova-york-1.jpg",
+      "/images/roteiros/nova-york-2.jpg",
+      "/images/roteiros/nova-york-3.jpg",
+      "/images/roteiros/nova-york-4.jpg",
+    ],
   },
 ];

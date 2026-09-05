@@ -24,7 +24,7 @@ export const VALORES = [
 
 export const MENSAGENS_CHAVE = [
   "Uma boa viagem não começa quando o avião decola.",
-  "Milhas não são apenas sobre acumular pontos — são sobre saber transformá-los em oportunidades.",
+  "Viajar bem é viajar com estratégia.",
   "Não é sobre acumular por acumular. É sobre transformar pontos em possibilidades.",
   "Existe uma diferença sutil entre descansar e realmente desacelerar.",
 ];
@@ -32,7 +32,7 @@ export const MENSAGENS_CHAVE = [
 export const HISTORIA_FUNDADORA = {
   paragrafos: [
     "A BnB Travel nasceu da combinação entre organização, pesquisa, vivência internacional e o desejo de transformar planejamento complexo em experiências leves e memoráveis.",
-    "Natassia, fundadora da BnB Travel, é formada em Comércio Exterior e construiu sua trajetória profissional como despachante aduaneira, além de ter empreendido no segmento de moda. Depois de um período de burnout e da decisão de deixar a área de formação, ela transformou o conhecimento acumulado organizando as próprias viagens — e as de pessoas próximas — em uma nova atividade profissional.",
+    "Natássia, fundadora da BnB Travel, é formada em Comércio Exterior e também empreendeu no segmento de moda. Depois de um período de burnout e da decisão de deixar a área de formação, ela transformou o conhecimento acumulado organizando as próprias viagens — e as de pessoas próximas — em uma nova atividade profissional.",
     "A experiência internacional, somada ao estudo aprofundado de cartões, programas de fidelidade e emissões, deu origem à BnB Travel. A marca nasce, também, como uma forma de ajudar outras pessoas a viajar com mais leveza e menos sobrecarga de decisão — evitando o mesmo desgaste que a fundadora viveu.",
   ],
 };

@@ -112,7 +112,7 @@ export function Sobre() {
       <section className="bg-navy py-24 text-cream sm:py-32">
         <div className="container">
           <Reveal className="mx-auto max-w-xl text-center">
-            <SectionEyebrow className="text-gold">O que nos guia</SectionEyebrow>
+            <SectionEyebrow className="!text-gold">O que nos guia</SectionEyebrow>
             <h2 className="mt-4 font-display text-3xl sm:text-4xl">Valores</h2>
           </Reveal>
 

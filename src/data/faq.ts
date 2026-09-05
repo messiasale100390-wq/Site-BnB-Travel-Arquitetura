@@ -21,11 +21,6 @@ export const FAQ: PerguntaFrequente[] = [
       "A consultoria (BnB Miles Start ou BnB Miles Strategy) é pontual: um ou dois encontros para organizar sua estratégia de cartões, pontos e emissões, com 30 dias de suporte. A gestão (BnB Miles Management) é contínua: acompanhamos por seis meses suas milhas, promoções, transferências e emissões, indicada para quem tem volume relevante e prefere delegar.",
   },
   {
-    pergunta: "Os valores mostrados no site são finais?",
-    resposta:
-      "São valores de referência. Escopo, número de viajantes, prazos, disponibilidade de fornecedores e taxas específicas variam de caso a caso e são sempre confirmados durante o diagnóstico, antes de qualquer contratação.",
-  },
-  {
     pergunta: "Vocês garantem economia ou emissão de passagens com milhas?",
     resposta:
       "Não. Milhas e pontos são ferramentas que ajudam a viabilizar viagens — não uma promessa de gratuidade ou economia garantida. Regras de programas e disponibilidade de emissão dependem dos fornecedores e podem mudar sem aviso prévio. Nosso trabalho é traduzir esse universo em decisões mais claras, sempre com transparência sobre o que está — e o que não está — garantido.",

@@ -23,7 +23,7 @@ export function Footer() {
 
         <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3 sm:text-left">
           <div>
-            <p className="label-eyebrow text-cream/65">Navegação</p>
+            <p className="label-eyebrow !text-cream/65">Navegação</p>
             <ul className="mt-4 space-y-2">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
@@ -39,7 +39,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="label-eyebrow text-cream/65">Contato</p>
+            <p className="label-eyebrow !text-cream/65">Contato</p>
             <ul className="mt-4 space-y-3">
               <li>
                 <a
@@ -76,7 +76,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="label-eyebrow text-cream/65">Diagnóstico</p>
+            <p className="label-eyebrow !text-cream/65">Diagnóstico</p>
             <p className="mt-4 font-sans text-sm leading-relaxed text-cream/75">
               Ainda não sabe por onde começar? Conte pra gente sobre a sua próxima
               viagem no formulário de Diagnóstico.

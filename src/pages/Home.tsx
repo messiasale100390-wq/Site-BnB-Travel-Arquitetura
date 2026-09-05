@@ -41,7 +41,7 @@ export function Home() {
         />
 
         <div className="relative z-10 flex flex-col items-center px-6 text-center text-cream drop-shadow-[0_2px_16px_rgba(20,26,30,0.55)]">
-          <p className="label-eyebrow text-cream/80">Consultoria boutique de viagens &amp; milhas</p>
+          <p className="label-eyebrow !text-cream">Consultoria boutique de viagens &amp; milhas</p>
           <h1 className="mt-5 max-w-3xl font-display text-5xl leading-[1.05] sm:text-6xl md:text-7xl">
             BnB Travel
           </h1>
@@ -152,7 +152,7 @@ export function Home() {
         <div className="absolute inset-0 bg-navy-dark/70" />
         <div className="container relative z-10">
           <Reveal className="mx-auto max-w-xl text-center">
-            <SectionEyebrow className="text-gold">Milhas &amp; pontos</SectionEyebrow>
+            <SectionEyebrow className="!text-gold">Milhas &amp; pontos</SectionEyebrow>
             <h2 className="mt-4 font-display text-3xl sm:text-4xl">
               Milhas são um caminho, não um destino
             </h2>

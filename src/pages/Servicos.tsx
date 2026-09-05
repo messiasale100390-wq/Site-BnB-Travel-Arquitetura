@@ -22,7 +22,7 @@ export function Servicos() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/30 to-navy-dark/10" />
         <div className="container relative z-10 pb-16 text-cream">
-          <SectionEyebrow className="text-cream/80">Catálogo</SectionEyebrow>
+          <SectionEyebrow className="!text-cream">Catálogo</SectionEyebrow>
           <h1 className="mt-4 max-w-xl font-display text-4xl leading-tight sm:text-5xl">
             Serviços
           </h1>
@@ -69,7 +69,7 @@ export function Servicos() {
               Não sabe qual serviço é o seu?
             </h2>
             <p className="mt-4 font-sans text-sm leading-relaxed text-cream/80">
-              Sem problema — é exatamente para isso que existe o diagnóstico. Vamos entender
+              Não tem problema. É exatamente para isso que existe o diagnóstico. Vamos entender
               juntos qual serviço combina com o seu momento, e conversar sobre valores com
               calma.
             </p>

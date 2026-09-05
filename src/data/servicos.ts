@@ -8,7 +8,7 @@ export const SERVICOS: Servico[] = [
   {
     numero: "01",
     nome: "BnB Essentials",
-    inclui: "Passagens, hotéis, seguro viagem e emissões avulsas.",
+    inclui: "Passagens, hotéis, seguro viagem e aluguel de carro.",
     investimento: "Comissão variável conforme o valor do item",
     investimentoReferencia: true,
     perfilIndicado: "Para quem deseja uma solução de viagem, sem burocracia.",
@@ -25,8 +25,7 @@ export const SERVICOS: Servico[] = [
   {
     numero: "03",
     nome: "BnB Miles Start",
-    inclui:
-      "1 encontro de consultoria e suporte por 30 dias, incluindo cartões e sala VIP.",
+    inclui: "1 encontro de consultoria e suporte por 30 dias.",
     investimento: "R$ 897",
     investimentoReferencia: true,
     perfilIndicado: "Para quem deseja compreender cartões e benefícios.",
@@ -35,7 +34,7 @@ export const SERVICOS: Servico[] = [
     numero: "04",
     nome: "BnB Miles Strategy",
     inclui:
-      "2 encontros em até 15 dias e suporte por 30 dias, com estratégia completa de milhas.",
+      "2 encontros em um intervalo de 15 dias, com aprendizado completo de estratégia de milhas.",
     investimento: "De R$ 2.497 por R$ 1.697",
     investimentoReferencia: true,
     perfilIndicado: "Para quem precisa de uma estratégia mais completa.",
@@ -43,17 +42,17 @@ export const SERVICOS: Servico[] = [
   {
     numero: "05",
     nome: "BnB Concierge",
-    inclui: "Emissão assistida, após consultoria de milhas.",
+    inclui: "Emissão feita pela BnB, utilizando as milhas do cliente.",
     investimento: "R$ 500, referência",
     investimentoReferencia: true,
     perfilIndicado:
-      "Para quem já aprendeu ou tem segurança parcial e deseja apoio na emissão.",
+      "Para quem já acumulou, mas se sente inseguro na hora da emissão.",
   },
   {
     numero: "06",
     nome: "BnB Miles Management",
     inclui:
-      "Gestão contínua por seis meses de pontos, promoções, transferências e emissões.",
+      "Gestão contínua por seis meses, onde a BnB irá fazer tudo por você, monitorar promoções, transferências, pontos e emissões.",
     investimento: "R$ 1.102/mês",
     investimentoReferencia: true,
     perfilIndicado:

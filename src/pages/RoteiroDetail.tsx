@@ -33,7 +33,7 @@ export function RoteiroDetail() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/25 to-navy-dark/10" />
         <div className="container relative z-10 pb-16 text-cream">
-          <SectionEyebrow className="text-cream/80">
+          <SectionEyebrow className="!text-cream">
             {roteiro.destino} · {roteiro.pais}
           </SectionEyebrow>
           <h1 className="mt-4 max-w-2xl font-display text-4xl leading-tight sm:text-5xl">

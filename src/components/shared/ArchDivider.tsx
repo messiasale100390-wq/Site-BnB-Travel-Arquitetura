@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 export function ArchDivider({ className }: { className?: string }) {
   return (
     <div className={cn("flex justify-center", className)} aria-hidden="true">
-      <svg width="64" height="40" viewBox="0 0 64 40" fill="none">
+      <svg width="48" height="62" viewBox="0 0 48 62" fill="none">
         <path
-          d="M2 38V20C2 9.5 10.5 1 21 1H43C53.5 1 62 9.5 62 20V38"
+          d="M2.4 60V26.4C2.4 13.145 10.855 2.4 24 2.4C37.145 2.4 45.6 13.145 45.6 26.4V60"
           stroke="currentColor"
           strokeWidth="1.5"
           className="text-gold"

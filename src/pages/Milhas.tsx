@@ -31,8 +31,8 @@ const TEMAS = [
 const CUIDADOS = [
   "Regras de programas e cartões podem mudar sem aviso prévio.",
   "Emitir com pontos depende de disponibilidade — nunca é garantido.",
-  "Conversões de pontos entre programas nem sempre são reversíveis.",
-  "Nunca solicitamos senhas, códigos de autenticação ou acesso completo às suas contas.",
+  "Conversões de pontos entre programas não são reversíveis.",
+  "O acesso a contas e cartões, quando necessário para a gestão de milhas, é tratado com sigilo e usado apenas para os fins do serviço contratado.",
 ];
 
 export function Milhas() {
@@ -52,7 +52,7 @@ export function Milhas() {
         />
         <div className="absolute inset-0 bg-navy-dark/65" />
         <div className="container relative z-10 text-center text-cream">
-          <SectionEyebrow className="text-cream/80">Milhas &amp; pontos</SectionEyebrow>
+          <SectionEyebrow className="!text-cream">Milhas &amp; pontos</SectionEyebrow>
           <h1 className="mx-auto mt-4 max-w-2xl font-display text-4xl leading-tight sm:text-5xl">
             Milhas são um caminho, não um destino
           </h1>
@@ -95,7 +95,7 @@ export function Milhas() {
         <div className="container relative z-10">
           <Reveal className="mx-auto max-w-xl text-center">
             <ArchDivider className="mb-8 text-gold" />
-            <SectionEyebrow className="text-gold">Cuidados que levamos a sério</SectionEyebrow>
+            <SectionEyebrow className="!text-gold">Cuidados que levamos a sério</SectionEyebrow>
             <ul className="mt-6 space-y-4 text-left">
               {CUIDADOS.map((c) => (
                 <li key={c} className="font-sans text-sm leading-relaxed text-cream/85">

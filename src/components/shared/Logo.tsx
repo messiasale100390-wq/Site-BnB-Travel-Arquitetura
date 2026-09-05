@@ -17,23 +17,23 @@ export function Logo({ className, tone = "dark" }: LogoProps) {
 
   return (
     <span className={cn("inline-flex flex-col items-center leading-none", className)}>
-      <span className="flex items-end">
-        <span className={cn("font-display text-3xl", textColor)}>B</span>
+      <span className="flex items-baseline">
+        <span className={cn("font-display text-[1.875rem] leading-none", textColor)}>B</span>
         <svg
           width="20"
           height="26"
           viewBox="0 0 20 26"
           fill="none"
-          className="mx-0.5 mb-[2px]"
+          className="mx-0.5"
           aria-hidden="true"
         >
           <path
-            d="M1 25V11C1 5.477 5.477 1 11 1H9C14.523 1 19 5.477 19 11V25"
+            d="M1 25V11C1 5.477 4.523 1 10 1C15.477 1 19 5.477 19 11V25"
             stroke="#C6A77D"
             strokeWidth="1.6"
           />
         </svg>
-        <span className={cn("font-display text-3xl", textColor)}>B</span>
+        <span className={cn("font-display text-[1.875rem] leading-none", textColor)}>B</span>
       </span>
       <span
         className={cn(
