@@ -20,7 +20,7 @@ export const SERVICOS: Servico[] = [
     investimento:
       "R$ 300 até 5 dias · R$ 600 até 10 dias · + R$ 100 por dia adicional",
     investimentoReferencia: true,
-    perfilIndicado: "Para quem deseja uma solução de viagem, sem burocracia.",
+    perfilIndicado: "Para quem já sabe o destino e quer um roteiro pensado no seu ritmo.",
   },
   {
     numero: "03",
